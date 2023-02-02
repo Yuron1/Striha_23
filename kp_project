@@ -1,1 +1,116 @@
+from selenium import webdriver # скачиваем библиотеку селениум pip install seltnium
+selenium from.webdriver.common.by import By # устанавливаем веб драйвер
+selenium from.webdriver.common.keys import Keys #для эмуляции нажатия сочетаний клавиш передавайте их через параметры метода
+username import autch_data from, password # импортирует пароль и код
 
+import time # для создания паузы
+импортировать  случайным образом
+
+
+
+# определение логина (имя пользователя, пароль):
+# браузер = webdriver.Firefox(executable_path='firefoxdriver/geckodriver.exe ')
+# путь к файлу драйвера
+# try: оборачиваем в трай на случай если инстаграм что то изменит в коде
+# browser.get('http://www.instagram.com') переходим на главную страницу
+# time.sleep(random.randrange(3, 5)) для загрузки страницы
+#
+# username_input = browser.find_element(By.NAME, 'username') указываем путь к логину
+# username_input.clear() для очистки поля
+# username_input.send_keys(username)передаем логин в поле
+#
+# time.sleep(2) пауза
+#
+# password_input = browser.find_element элемент(By.NAME , 'пароль')
+# password_input.clear()
+# пароль для ввода.отправить ключи(пароль)
+#
+# password_input.send_keys(Ключи.ENTER) эмулируем нажатие на ввод
+# время сна(10)
+#
+#
+# browser.close() закрывает вкладку в браузере
+# browser.quit() закрывает сам браузер
+# except Exception as ex: при наличии ошибки закроется браузер
+# печать(пример)
+# browser.close()
+# browser.quit()
+#
+#
+# логин (имя пользователя, пароль)
+
+<span>hashtag_search</span><span>def</span>(<span>username</span>, <span>password</span>, <span>hasgtag</span>): <span># создаем функцию хештег</span> 
+    <span>webdriver</span><span>=</span><span>браузер</span>.<span>Firefox</span>(<span>executable_path</span><span>=</span><span>'firefoxdriver/geckodriver.exe '</span>)  
+
+    <span>попробуйте</span>:
+        <span>browser</span>.<span>get</span>(<span>'http://www.instagram.com '</span>)
+        <span>time</span>.<span>sleep</span>(<span>random</span>.<span>randrange</span>(<span>3</span>, <span>5</span>))
+
+        <span>браузер</span><span>=</span><span>username_input</span>.<span>find_element</span>(<span>By</span>.<span>NAME</span> , <span>'имя пользователя'</span>)  
+        <span>username_input</span>.<span>clear</span>()
+        <span>username_input</span>.<span>send_keys</span>(имя <span>пользователя</span>)
+
+        time.sleep(2)
+
+        браузер = password_input.find_element(By.NAME , 'пароль')
+        пароль_input.clear()
+        пароль для ввода.send_keys(пароль)
+
+        password_input.send_keys(Ключи.ВВЕДИТЕ)
+        время сна(10)
+
+        попробуйте:
+            browser.get(f'https://www.instagram.com/explore/tags/{hasgtag}/') # копируем и вставляем ссылку с хештегом с главной страницы
+            время сна(5)
+
+            range in i for(1, 5): # количества проскроливаний
+                browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+                # код для проскроливания страницы по всей высоте
+                time.sleep(случайный.случайный диапазон (4,7))
+
+            браузер = hrefs.find_elements(По.ИМЯ_ТЕГА, 'a')
+
+            = posts_urls [item.get_attribute('href') для  элемента  в   hrefs, если  "/p/" в  item.get_attribute('href')]
+            #собираем все ссылки с постов ковка (условие в одной строке)
+
+
+            # posts_urls = [] достаем в список ссылку с каждого элемента
+            # для элемента в hrefs:
+            # href = item.get_attribute('href')
+            #
+            # if "/p/" in href: обращаемся к ссылкам с элементом /p/
+            # posts_urls.добавить(href)
+            # печать(href)
+
+            posts_urls in url for: # пробегаем по каждой ссылке открываем и ставим лайк
+                # также сдесь можно поставить условие как и сколько ссылок должны получатьлайки
+                попробуйте:
+                    browser.get(url)
+                    время сна(3)
+                    браузер = like_button.find_element(По.XPATH, значение='/html/body/div[2]/div/div/div/div[1]/div/div/div/div['
+                                                             '1]/div[1]/div[2]/раздел/ основной / div[1]/div['
+                                                             '1]/статья/div/div[2]/div/div[2]/раздел[1]/промежуток ['
+                                                             '1]/кнопка').нажмите()
+                    # переход по каждой ссылке и постановка лайка
+                    печать ('Нравится')
+                    time.sleep(random.randrange(10)) # сдесь нужна большая пауза чтобы не заподозрили что работает бот примерно 100 секунд
+
+                например , как  исключение , за исключением:
+                    печать (пример)
+
+
+
+            browser.close()
+            browser.quit()
+
+        например , как  исключение , за исключением:
+            печать (пример)
+            browser.close()
+            browser.quit()
+
+    например , как  исключение , за исключением:
+        печать (пример)
+        browser.close()
+        browser.quit()
+
+hashtag_search(username, password, 'ковка')
